@@ -1,6 +1,6 @@
 # BANT Human Annotation Guideline
 
-**BANT** stands for **Bangla Arrogance and Non-Arrogant Toxicity Dataset**. The archived Mendeley Data Version 7 record and legacy `BADD_*.csv` filenames retain the earlier BADD name for compatibility.
+**BANT** stands for **Bangla Arrogance and Non-Arrogant Toxicity Dataset**. The canonical dataset record is **Mendeley Data Version 1**, DOI **10.17632/f8gxb8xcw6.1**.
 
 ## Purpose
 Annotators judge each Bangla social-media comment from its overall meaning, tone, context, and pragmatic intent. Annotation decisions are based only on human judgment.
@@ -36,13 +36,13 @@ The annotators did not use a confidence field in the released annotation files. 
 Because the material included abusive and psychologically unpleasant language, annotators were advised to take a break approximately every 30 minutes to reduce prolonged exposure to disturbing content.
 
 ## Consensus
-The archived annotation files preserve the three submitted human labels. Final release labels are derived computationally by majority vote.
+The archived annotation files preserve the three submitted human labels. Final three-class labels are derived computationally by majority vote.
 
-For the Mendeley Version 7 binary task:
+The binary task is derived as follows:
 - `Arrogant` remains `Arrogant`.
 - `Non-Arrogant-Toxic` and `Non-Arrogant` map to `Non-arrogant`.
 
-The GitHub-only `three_class_release/` companion preserves the original three-class majority-vote labels and is the recommended resource for researchers who want to model the full BANT label distinction.
+BANT Mendeley Data Version 1 includes both the binary and three-class task views.
 
 ## Acknowledgment
 We gratefully acknowledge **Md. Golam Mostafa, Assistant Professor, Department of Bengali, Cox's Bazar Government College, Cox's Bazar**, for linguistic guidance, the pre-annotation briefing, clarification of ambiguous cases, and review of the AI-originated Bangla examples.
