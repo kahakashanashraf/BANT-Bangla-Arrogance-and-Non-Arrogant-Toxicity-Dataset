@@ -1,6 +1,7 @@
 {
-  "release_name": "BADD current Bengali + English companion release",
-  "release_date": "2026-09-23",
+  "release_name": "BANT — Bangla Arrogance and Non-Arrogant Toxicity Dataset, Mendeley Data V1",
+  "release_date": "2026-09-28",
+  "doi": "10.17632/f8gxb8xcw6.1",
   "dataset_rows": 22427,
   "dataset_signature": "dfaea41205d19f78",
   "canonical_language": "Bengali",
@@ -22,9 +23,14 @@
     "News portal": 5547,
     "AI": 918
   },
-  "label_counts": {
+  "binary_label_counts": {
     "Non-arrogant": 16301,
     "Arrogant": 6126
+  },
+  "three_class_label_counts": {
+    "Arrogant": 6126,
+    "Non-Arrogant-Toxic": 9183,
+    "Non-Arrogant": 7118
   },
   "split_counts": {
     "train": 17941,
