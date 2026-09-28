@@ -1,0 +1,39 @@
+name: Migrate BANT repository content
+
+on:
+  push:
+    paths:
+      - ".github/workflows/migrate-bant.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout new BANT repository
+        uses: actions/checkout@v4
+
+      - name: Clone current source repository
+        run: |
+          git clone --depth 1 https://github.com/kahakashanashraf/BAAD-Dataset.git /tmp/bant-source
+
+      - name: Copy current BANT content
+        run: |
+          rsync -a --delete             --exclude='.git'             --exclude='.github'             /tmp/bant-source/ ./
+          mkdir -p .github/workflows
+          cp /tmp/bant-source/.github/workflows/sync-final-dataset.yml .github/workflows/sync-final-dataset.yml
+
+      - name: Commit migrated content
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Migrate BANT dataset content to canonical repository"
+            git push
+          fi
