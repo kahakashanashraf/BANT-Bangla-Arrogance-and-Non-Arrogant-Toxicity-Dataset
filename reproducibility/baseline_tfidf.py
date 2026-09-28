@@ -50,8 +50,8 @@ def strict_similarity_mask(train_text, test_text, threshold=0.95):
     return sim < threshold, sim
 
 def main(root: Path):
-    tr = pd.read_csv(root / "BADD_train_bengali.csv")
-    te = pd.read_csv(root / "BADD_test_bengali.csv")
+    tr = pd.read_csv(root / "BANT_train_bengali.csv")
+    te = pd.read_csv(root / "BANT_test_bengali.csv")
     clf = model(binary=True)
     clf.fit(tr.comment.astype(str), tr.arrogance_label)
     pred = clf.predict(te.comment.astype(str))
@@ -66,8 +66,8 @@ def main(root: Path):
 
     three_dir = root / "three_class_release"
     if three_dir.exists():
-        tr3 = pd.read_csv(three_dir / "BADD_train_bengali_3class.csv")
-        te3 = pd.read_csv(three_dir / "BADD_test_bengali_3class.csv")
+        tr3 = pd.read_csv(three_dir / "BANT_train_bengali_3class.csv")
+        te3 = pd.read_csv(three_dir / "BANT_test_bengali_3class.csv")
         clf3 = model(binary=False)
         clf3.fit(tr3.comment.astype(str), tr3.arrogance_label_3class)
         pred3 = clf3.predict(te3.comment.astype(str))

@@ -4,5 +4,5 @@ comment_bn,Original Bangla comment in bilingual files.
 comment_en,NLLB machine-translated English companion text in bilingual files.
 source,"Data provenance category: YouTube, Facebook, News portal, or AI."
 arrogance_label_3class,"Three-class majority-vote label derived from the three human annotation files: Arrogant, Non-Arrogant-Toxic, or Non-Arrogant."
-arrogance_label_binary,Binary compatibility label used in the Mendeley V7 release: Arrogant or Non-arrogant. Both Non-Arrogant-Toxic and Non-Arrogant map to Non-arrogant.
+arrogance_label_binary,Binary compatibility label used in the Mendeley Data V1 release: Arrogant or Non-arrogant. Both Non-Arrogant-Toxic and Non-Arrogant map to Non-arrogant.
 category,Fine-grained arrogance subtype for rows labeled Arrogant; blank otherwise.

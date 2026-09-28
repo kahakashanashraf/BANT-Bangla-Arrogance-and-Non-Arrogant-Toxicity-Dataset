@@ -2,7 +2,7 @@
 
 The canonical dataset record is **BANT — Bangla Arrogance and Non-Arrogant Toxicity Dataset, Mendeley Data Version 1**, DOI **10.17632/f8gxb8xcw6.1**.
 
-This repository provides both the binary task and the original three-class majority-vote task. Existing `BADD_*.csv` filenames are retained in the repository for backward code compatibility.
+This repository provides both the binary task and the original three-class majority-vote task. Released dataset filenames use the canonical `BANT_*.csv` prefix.
 
 ## Release validation
 

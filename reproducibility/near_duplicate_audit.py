@@ -9,9 +9,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 def main(root: Path, threshold: float) -> None:
-    train = pd.read_csv(root / "BADD_train_bengali.csv")
-    val = pd.read_csv(root / "BADD_validation_bengali.csv")
-    test = pd.read_csv(root / "BADD_test_bengali.csv")
+    train = pd.read_csv(root / "BANT_train_bengali.csv")
+    val = pd.read_csv(root / "BANT_validation_bengali.csv")
+    test = pd.read_csv(root / "BANT_test_bengali.csv")
     all_text = pd.concat([train.comment, val.comment, test.comment], ignore_index=True).astype(str)
     vec = TfidfVectorizer(
         analyzer="char_wb", ngram_range=(3, 5), min_df=2,

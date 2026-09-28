@@ -27,12 +27,12 @@ The name emphasizes the distinction that motivates the annotation design: **toxi
 
 ## Main files
 
-This repository retains the existing `BADD_*.csv` filenames for backward code compatibility. The current dataset identity and citation are **BANT V1**.
+All released dataset filenames use the canonical **BANT** prefix and correspond to **BANT V1**.
 
-- `BADD_final_dataset_bengali.csv` — Bengali binary release
-- `BADD_final_dataset_english.csv` — machine-translated English companion
-- `BADD_final_dataset_bilingual.csv` — aligned Bengali + English text
-- `BADD_train_bengali.csv`, `BADD_validation_bengali.csv`, `BADD_test_bengali.csv`
+- `BANT_final_dataset_bengali.csv` — Bengali binary release
+- `BANT_final_dataset_english.csv` — machine-translated English companion
+- `BANT_final_dataset_bilingual.csv` — aligned Bengali + English text
+- `BANT_train_bengali.csv`, `BANT_validation_bengali.csv`, `BANT_test_bengali.csv`
 - Matching English split files
 - `three_class_release/` — three-class Bengali, English, and bilingual files with matching fixed splits
 - `ANNOTATION_GUIDELINE.md`

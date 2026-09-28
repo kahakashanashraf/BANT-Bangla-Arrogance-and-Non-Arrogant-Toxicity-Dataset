@@ -12,12 +12,12 @@ def canonical_text(text: str) -> str:
     return re.sub(r"\s+", " ", s.lower()).strip()
 
 def main(root: Path) -> None:
-    full = pd.read_csv(root / "BADD_final_dataset_bengali.csv")
-    train = pd.read_csv(root / "BADD_train_bengali.csv")
-    val = pd.read_csv(root / "BADD_validation_bengali.csv")
-    test = pd.read_csv(root / "BADD_test_bengali.csv")
-    eng = pd.read_csv(root / "BADD_final_dataset_english.csv")
-    bilingual = pd.read_csv(root / "BADD_final_dataset_bilingual.csv")
+    full = pd.read_csv(root / "BANT_final_dataset_bengali.csv")
+    train = pd.read_csv(root / "BANT_train_bengali.csv")
+    val = pd.read_csv(root / "BANT_validation_bengali.csv")
+    test = pd.read_csv(root / "BANT_test_bengali.csv")
+    eng = pd.read_csv(root / "BANT_final_dataset_english.csv")
+    bilingual = pd.read_csv(root / "BANT_final_dataset_bilingual.csv")
 
     assert len(full) == 22427
     assert full["comment"].isna().sum() == 0
@@ -52,7 +52,7 @@ def main(root: Path) -> None:
 
     three_dir = root / "three_class_release"
     if three_dir.exists():
-        three = pd.read_csv(three_dir / "BADD_final_dataset_bengali_3class.csv")
+        three = pd.read_csv(three_dir / "BANT_final_dataset_bengali_3class.csv")
         assert len(three) == len(full)
         assert three.comment.equals(full.comment)
         assert three.source.equals(full.source)
@@ -61,7 +61,7 @@ def main(root: Path) -> None:
             "Non-Arrogant-Toxic": 9183, "Non-Arrogant": 7118, "Arrogant": 6126,
         }
 
-    print("BANT V1 repository validation passed (legacy repository filenames retained).")
+    print("BANT V1 repository validation passed.")
     print("Rows: 22,427 | splits: 17,941 / 2,243 / 2,243")
     print("Three-class labels: 6,126 Arrogant / 9,183 Non-Arrogant-Toxic / 7,118 Non-Arrogant")
     print("Binary labels: 6,126 Arrogant / 16,301 Non-arrogant")
