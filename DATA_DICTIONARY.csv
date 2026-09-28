@@ -1,0 +1,7 @@
+﻿column,type,description
+comment,string,Comment text. In *_bengali.csv this is Bengali; in *_english.csv this is the English machine translation.
+comment_bn,string,Canonical Bengali comment text in the bilingual file.
+comment_en,string,English machine translation in the bilingual file.
+source,categorical,"Data source/provenance category: AI, Facebook, YouTube, or News portal. AI here is a source category, not an annotator."
+arrogance_label,categorical,Final public binary label: Arrogant or Non-arrogant.
+category,categorical/blank,One of five arrogance categories for Arrogant rows; blank for Non-arrogant rows.

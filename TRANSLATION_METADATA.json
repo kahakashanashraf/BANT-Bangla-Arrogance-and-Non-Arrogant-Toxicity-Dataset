@@ -1,0 +1,36 @@
+{
+  "release_name": "BADD current Bengali + English companion release",
+  "release_date": "2026-09-23",
+  "dataset_rows": 22427,
+  "dataset_signature": "dfaea41205d19f78",
+  "canonical_language": "Bengali",
+  "translated_language": "English",
+  "translation_model": "facebook/nllb-200-distilled-600M",
+  "source_language_code": "ben_Beng",
+  "target_language_code": "eng_Latn",
+  "model_input_tokens_per_chunk": 440,
+  "max_new_tokens": 512,
+  "num_beams": 2,
+  "do_sample": false,
+  "automatic_QA_flagged_rows": 197,
+  "qa_sample_size": 500,
+  "labels_modified_by_translation": false,
+  "source_modified_by_translation": false,
+  "source_counts": {
+    "YouTube": 10081,
+    "Facebook": 5881,
+    "News portal": 5547,
+    "AI": 918
+  },
+  "label_counts": {
+    "Non-arrogant": 16301,
+    "Arrogant": 6126
+  },
+  "split_counts": {
+    "train": 17941,
+    "validation": 2243,
+    "test": 2243
+  },
+  "annotation_protocol": "Exactly three human annotators; no AI/model used as annotator or in human consensus.",
+  "source_AI_note": "AI is a data source/provenance value, not an annotator."
+}
