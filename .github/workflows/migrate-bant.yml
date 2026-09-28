@@ -23,8 +23,6 @@ jobs:
       - name: Copy current BANT content
         run: |
           rsync -a --delete             --exclude='.git'             --exclude='.github'             /tmp/bant-source/ ./
-          mkdir -p .github/workflows
-          cp /tmp/bant-source/.github/workflows/sync-final-dataset.yml .github/workflows/sync-final-dataset.yml
 
       - name: Commit migrated content
         run: |
