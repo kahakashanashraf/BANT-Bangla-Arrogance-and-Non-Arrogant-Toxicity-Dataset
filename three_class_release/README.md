@@ -1,10 +1,10 @@
-# BANT Three-Class Companion Release
+# BANT Three-Class Release
 
 **BANT** stands for **Bangla Arrogance and Non-Arrogant Toxicity Dataset**.
 
-This folder is an **optional three-class companion** to the canonical Mendeley Data Version 7 binary release. The archived Mendeley record and legacy `BADD_*.csv` filenames retain the earlier BADD name for DOI and code compatibility.
+This folder contains the original three-class majority-vote task for BANT. The same three-class task is included in the **Mendeley Data Version 1** deposit (DOI: **10.17632/f8gxb8xcw6.1**).
 
-The archived Mendeley Data Version 7 release (DOI: 10.17632/fyzy2z8nzx.7) remains unchanged and uses the binary public label `Arrogant` vs `Non-arrogant`. This GitHub companion preserves the original three-way human annotation distinction so researchers can also study:
+The three labels are:
 
 - `Arrogant`
 - `Non-Arrogant-Toxic`
@@ -12,7 +12,7 @@ The archived Mendeley Data Version 7 release (DOI: 10.17632/fyzy2z8nzx.7) remain
 
 ## Derivation
 
-The three-class label is derived by row-wise majority voting across the three human annotation files. No AI/model prediction is used to determine the annotation label. The existing binary label is retained in every file for compatibility:
+The three-class label is derived by row-wise majority voting across the three human annotation files. No AI/model prediction is used to determine the annotation label. The binary-compatible label is retained in every file:
 
 - `Arrogant` → `Arrogant`
 - `Non-Arrogant-Toxic` → `Non-arrogant`
@@ -29,7 +29,7 @@ The three-class label is derived by row-wise majority voting across the three hu
 
 ## Fixed splits
 
-The same row membership as the canonical V7 80/10/10 split is retained.
+The same row membership is retained across the binary and three-class tasks.
 
 | Split | Rows |
 |---|---:|
@@ -41,17 +41,15 @@ No re-splitting was performed.
 
 ## Files
 
-Bengali, English, and aligned bilingual versions are provided for the full dataset and fixed train/validation/test splits. The English text is the same machine-translated NLLB companion used by the canonical V7 release; only the additional three-class annotation field is added.
+Bengali, English, and aligned bilingual versions are provided for the full dataset and fixed train/validation/test splits.
 
-Use `arrogance_label_3class` for the full BANT three-class task and `arrogance_label_binary` for the canonical binary task.
+Use `arrogance_label_3class` for the three-class task and `arrogance_label_binary` for the binary-compatible view.
 
 ## Citation
 
-Please cite the archived dataset exactly as deposited:
+Please cite:
 
-Ashraf, Kahakashan; Arefin, Mohammad Shamsul; Hossain, Hamid (2026), "BADD: A Large-Scale Bengali Dataset for Arrogance Detection", Mendeley Data, V7, doi: 10.17632/fyzy2z8nzx.7
-
-When referring to the current repository/project in prose, use **BANT — Bangla Arrogance and Non-Arrogant Toxicity Dataset**.
+**Ashraf, Kahakashan (2026), “BANT: Bangla Arrogance and Non-Arrogant Toxicity Dataset”, Mendeley Data, V1, doi: 10.17632/f8gxb8xcw6.1.**
 
 ## License
 
