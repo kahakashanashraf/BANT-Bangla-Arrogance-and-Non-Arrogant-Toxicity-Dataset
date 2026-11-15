@@ -85,6 +85,12 @@ Automatic QA currently flags **197 rows** for manual inspection. These flags are
 
 See `REPRODUCIBILITY.md` and `reproducibility/` for release-integrity checks, cross-split similarity auditing, and a lightweight TF-IDF/logistic-regression sanity benchmark.
 
+
+## Contributors
+
+- [@kahakashanashraf](https://github.com/kahakashanashraf)
+- [@hamid42](https://github.com/hamid42)
+
 ## Acknowledgment
 
 We gratefully acknowledge **Md. Golam Mostafa, Assistant Professor, Department of Bengali, Cox's Bazar Government College, Cox's Bazar**, for linguistic guidance, the pre-annotation briefing, clarification of ambiguous cases, and review of the AI-originated Bangla examples.
