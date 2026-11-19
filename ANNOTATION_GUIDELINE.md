@@ -27,11 +27,13 @@ For comments labelled Arrogant, select the most appropriate category:
 - Do not use model predictions or automated confidence signals to determine labels.
 
 ## Annotation protocol
-The dataset was reviewed by exactly **three human annotators**. Each annotator received a separate copy of the annotation material and submitted a label and, for Arrogant comments, one of the five fine-grained categories.
+Three human annotators were assigned to the dataset. Each annotator received a separate copy of the annotation material and submitted a label and, for Arrogant comments, one of the five fine-grained categories.
 
 Before the main annotation activity, the annotators received an online briefing from **Md. Golam Mostafa** on the label definitions, category boundaries, and practical decision rules. During annotation, an annotator could contact him when a guideline or ambiguous example was unclear. These consultations were for clarification of the annotation rules rather than post-hoc group adjudication of submitted disagreements.
 
 The annotators did not use a confidence field in the released annotation files. No AI system, model prediction, or model-derived signal was used as an annotator or as a source of human consensus.
+
+> **Reliability caveat:** two of the three archived annotation files are byte-identical, and the third differs from them in only 6 rows. The archive therefore does not document three independent annotations: the majority vote reproduces one annotator's labels on every row. Treat the labels as a single annotation pass; no inter-annotator agreement coefficient is reported.
 
 Because the material included abusive and psychologically unpleasant language, annotators were advised to take a break approximately every 30 minutes to reduce prolonged exposure to disturbing content.
 

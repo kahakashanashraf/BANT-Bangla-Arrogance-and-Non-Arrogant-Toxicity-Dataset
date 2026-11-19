@@ -4,7 +4,7 @@
 
 > **Canonical citation:** Ashraf, Kahakashan (2026), “BANT: Bangla Arrogance and Non-Arrogant Toxicity Dataset”, Mendeley Data, V1, doi: **10.17632/f8gxb8xcw6.1**.
 
-Three human annotators reviewed separate copies of the annotation material. No AI/model prediction is used as an annotator or in the human label-consensus procedure.
+Labels come from a three-annotator workflow, but two of the three archived annotation files are identical, so the labels effectively reflect a single annotation pass (see Annotation). No AI/model prediction is used as an annotator or in the label-consensus procedure.
 
 > **Important:** the value `AI` in the `source` column denotes a data-provenance/source category. It does **not** mean an AI system annotated those rows.
 
@@ -73,9 +73,11 @@ The binary view is derived as follows:
 
 ## Annotation
 
-Exactly three human annotators reviewed separate copies of the annotation material. Before annotation, they received a common briefing on the label definitions and decision rules. Annotators could seek clarification from Md. Golam Mostafa when a rule or ambiguous example was unclear; these consultations were for guideline clarification, not post-hoc group adjudication.
+Three human annotators were assigned separate copies of the annotation material. Before annotation, they received a common briefing on the label definitions and decision rules. Annotators could seek clarification from Md. Golam Mostafa when a rule or ambiguous example was unclear; these consultations were for guideline clarification, not post-hoc group adjudication.
 
-The archived annotation exports contain **22,421 unanimous three-class rows** and **6 majority-vote disagreements**. No AI/model prediction was used as an annotator or consensus signal.
+The archived annotation exports contain 22,421 unanimous three-class rows and 6 majority-vote rows. No AI/model prediction was used as an annotator or consensus signal.
+
+**Reliability caveat:** two of the three archived annotation files are byte-identical, and the third differs from them in only 6 rows. The archive therefore does not document three independent annotations: the majority vote reproduces one annotator's labels on every row. Treat the labels as a single annotation pass; no inter-annotator agreement coefficient is reported.
 
 ## English companion translation
 

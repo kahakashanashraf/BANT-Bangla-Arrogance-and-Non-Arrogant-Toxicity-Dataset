@@ -37,6 +37,6 @@
     "validation": 2243,
     "test": 2243
   },
-  "annotation_protocol": "Exactly three human annotators; no AI/model used as annotator or in human consensus.",
+  "annotation_protocol": "Three-annotator workflow; two of the three archived annotation files are identical, so labels reflect a single annotation pass. No AI/model used as annotator or in consensus.",
   "source_AI_note": "AI is a data source/provenance value, not an annotator."
 }
