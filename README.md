@@ -8,6 +8,8 @@ Three human annotators reviewed separate copies of the annotation material. No A
 
 > **Important:** the value `AI` in the `source` column denotes a data-provenance/source category. It does **not** mean an AI system annotated those rows.
 
+> **De-identification update (Version 2):** the data files in this repository now mask 10 comments that still contained phone numbers (several written in Bengali digits), an e-mail address, or links. These were replaced with `<PHONE>`, `<EMAIL>`, and `<URL>`. Labels, sources, categories, and splits are unchanged. See `CHANGELOG.md`. The matching Mendeley Data Version 2 record is in preparation.
+
 ## Current release
 
 - **Dataset:** BANT — Bangla Arrogance and Non-Arrogant Toxicity Dataset
